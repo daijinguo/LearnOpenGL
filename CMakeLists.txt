@@ -16,7 +16,8 @@ add_subdirectory(3rd/glad glad EXCLUDE_FROM_ALL)
 set(TARGET_NAME gl-demo)
 set(SRC_FILES
         src/main.cc
-        src/1_1_helloworld.cc)
+        src/1_1_helloworld.cc
+        src/2_1_hello_triangle.cc)
 
 
 add_executable(gl-demo ${SRC_FILES})
