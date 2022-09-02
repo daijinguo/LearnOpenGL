@@ -13,14 +13,14 @@ add_subdirectory(3rd/glfw glfw EXCLUDE_FROM_ALL)
 add_subdirectory(3rd/glad glad EXCLUDE_FROM_ALL)
 
 
-set(TARGET_NAME gl-demo)
+set(TARGET_NAME gldemo)
 set(SRC_FILES
         src/main.cc
         src/1_1_helloworld.cc
         src/2_1_hello_triangle.cc)
 
 
-add_executable(gl-demo ${SRC_FILES})
+add_executable(${TARGET_NAME} ${SRC_FILES})
 target_include_directories(${TARGET_NAME} PRIVATE
         3rd/glfw/include
         3rd/glad/include)
