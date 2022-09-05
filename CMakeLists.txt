@@ -17,7 +17,8 @@ set(TARGET_NAME gldemo)
 set(SRC_FILES
         src/main.cc
         src/1_1_helloworld.cc
-        src/2_1_hello_triangle.cc)
+        src/2_1_hello_triangle.cc
+        src/2_2_hello_triangle_indexed.cpp)
 
 
 add_executable(${TARGET_NAME} ${SRC_FILES})

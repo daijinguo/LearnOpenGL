@@ -10,7 +10,8 @@
 int main(int argc, char *argv[])
 {
 	PROJ_INSTANCE(false, 1_1, argc, argv);
-	PROJ_INSTANCE(true, 2_1, argc, argv);
+	PROJ_INSTANCE(false, 2_1, argc, argv);
+	PROJ_INSTANCE(true, 2_2, argc, argv);
 
 	return 0;
 }
