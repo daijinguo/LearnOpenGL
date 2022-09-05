@@ -56,6 +56,11 @@ int main_2_2(int argc, char *argv[])
 		return -1;
 	}
 
+	// glGetIntegerv must call after gladLoadGLLoader called
+	int nrAttributes;
+	glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &nrAttributes);
+	std::cout << "Maximum nr of vertex attributes supported: " << nrAttributes << std::endl;
+
 	// build and compile our shader program
 	// ------------------------------------
 	// vertex shader
